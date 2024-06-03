@@ -1,0 +1,27 @@
+{
+  "name": "unplugin-element-plus-vite-example",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "element-plus": "^2.6.3",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/compiler-sfc": "^3.3.4",
+    "less": "^4.2.0",
+    "unplugin-strive-molu": "workspace:^",
+    "vite": "^5.2.12",
+    "vue-tsc": "^2.0.19"
+  }
+}

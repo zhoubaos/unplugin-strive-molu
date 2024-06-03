@@ -1,0 +1,11 @@
+# Editor
+.idea
+.vscode
+
+# Packae Manager
+node_modules
+
+# Bundle
+dist
+
+# Other
