@@ -47,6 +47,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "pnpm run lint --fix",
+    "zx:tag": "tsx scripts/zx/tag.ts",
     "build": "tsup",
     "dev": "tsup --watch",
     "vite:dev": "pnpm -C example/vite run dev",
