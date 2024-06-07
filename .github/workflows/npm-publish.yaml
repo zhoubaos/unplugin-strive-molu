@@ -1,0 +1,36 @@
+name: npm-publish
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.com/
+
+        # 设置pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+
+      # 根据pnpm-lock.yaml文件中的版本安装依赖，且锁定该文件
+      - name: Install Dependencies
+        run: pnpm i --frozen-lockfile
+
+      - name: Build Dist
+        run: pnpm build
+
+      - name: publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}

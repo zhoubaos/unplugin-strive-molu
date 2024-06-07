@@ -1,7 +1,7 @@
 import { type UnpluginFactory, createUnplugin } from 'unplugin';
 import { createFilter } from '@rollup/pluginutils';
-import { type Options } from './core/types';
-import { transformStyle } from './core/style';
+import { type Options } from './core/types.ts';
+import { transformStyle } from './core/style.ts';
 
 export type { Options };
 

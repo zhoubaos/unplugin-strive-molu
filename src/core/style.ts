@@ -1,5 +1,5 @@
 import { type ImportSpecifier, type ExportSpecifier, init, parse } from 'es-module-lexer';
-import { type Options } from './types';
+import { type Options } from './types.ts';
 import type { TransformResult } from 'unplugin';
 import MagicString from 'magic-string';
 import { pascalCase } from 'change-case';

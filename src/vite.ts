@@ -1,2 +1,2 @@
-import unplugin from '.';
+import unplugin from './index.ts';
 export default unplugin.vite;
