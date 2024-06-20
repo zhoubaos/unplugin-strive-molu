@@ -1,7 +1,7 @@
 {
   "name": "unplugin-strive-molu",
   "packageManager": "pnpm@8.15.5",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "在strive-molu使用组件时自动导入样式",
   "keywords": [
     "strive-molu",
@@ -17,19 +17,19 @@
   "exports": {
     ".": {
       "types": {
-        "require": "./dist/index.d.ts",
-        "import": "./dist/index.d.mts"
+        "require": "./dist/index.d.cts",
+        "import": "./dist/index.d.ts"
       },
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
     },
     "./vite": {
       "types": {
-        "require": "./dist/vite.d.ts",
-        "import": "./dist/vite.d.mts"
+        "require": "./dist/vite.d.cts",
+        "import": "./dist/vite.d.ts"
       },
-      "require": "./dist/vite.js",
-      "import": "./dist/vite.mjs"
+      "require": "./dist/vite.cjs",
+      "import": "./dist/vite.js"
     },
     "./*": "./*"
   },
